@@ -22,5 +22,6 @@ LOCAL_PRELINK_MODULE := false
 LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)/hw
 LOCAL_SHARED_LIBRARIES := liblog
 LOCAL_SRC_FILES := lights.cpp
+LOCAL_CFLAGS := -Wno-multichar -Wno-missing-field-initializers
 LOCAL_MODULE := lights.omap3
 include $(BUILD_SHARED_LIBRARY)
