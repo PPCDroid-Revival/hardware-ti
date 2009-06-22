@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-
+ifeq ($(strip $(BOARD_USES_OMAP3_LIGHTS)),true)
 LOCAL_PATH := $(call my-dir)
 
 # HAL module implemenation, not prelinked and stored in
@@ -25,3 +25,4 @@ LOCAL_SRC_FILES := lights.cpp
 LOCAL_CFLAGS := -Wno-multichar -Wno-missing-field-initializers
 LOCAL_MODULE := lights.omap3
 include $(BUILD_SHARED_LIBRARY)
+endif
