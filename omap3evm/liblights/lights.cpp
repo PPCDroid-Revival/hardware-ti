@@ -27,7 +27,7 @@
 
 #include <cutils/log.h>
 
-#define BACKLIGHT_PATH "/sys/class/backlight/omap3-bklight/brightness"
+#define BACKLIGHT_PATH "/sys/class/backlight/omap-backlight/brightness"
 #define BRIGHTNESS_SCALED_SETTING(x)	(int) ((x & 0xff) / 2.55)
 
 static int omap3evm_set_light(struct light_device_t* dev,
