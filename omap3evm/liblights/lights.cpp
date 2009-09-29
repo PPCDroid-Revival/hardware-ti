@@ -38,8 +38,6 @@ static int omap3evm_set_light(struct light_device_t* dev,
 	unsigned int i;
 	char buf[4];
 
-	struct light_state_t *test = const_cast<struct light_state_t*>(state);
-
 	if (fd < 0)
 		return -EINVAL;
 
